@@ -3,18 +3,20 @@ import classNames from 'classnames';
 import TimelineItem from './TimelineItem';
 import splitObject from './splitObject';
 
-export interface TimelineProps {
+const  propTypes = {
   /** 指定最后一个幽灵节点是否存在或内容 */
-  pending?: boolean | React.ReactNode;
-  style?: React.CSSProperties;
+  pending: React.PropTypes.oneOfType([
+      React.PropTypes.bool,
+      React.PropTypes.node
+  ])
 }
 
-export default class Timeline extends React.Component<TimelineProps, any> {
-  static Item: React.ReactNode;
-  static defaultProps = {
-    prefixCls: 'u-timeline',
-  };
-
+const defaultProps = {
+    prefixCls: 'u-timeline'
+}
+//static Item: React.ReactNode;  TimelineProps
+class Timeline extends React.Component{
+  
   render() {
     const [{
       prefixCls, children, pending, className,
@@ -24,7 +26,7 @@ export default class Timeline extends React.Component<TimelineProps, any> {
     const classString = classNames(prefixCls, {
       [`${prefixCls}-pending`]: !!pending,
     }, className);
-    const items = React.Children.map(children, (ele: React.ReactElement<any>, idx) =>
+    const items = React.Children.map(children, (ele,idx) =>
       React.cloneElement(ele, {
         last: idx === children.length - 1,
       })
@@ -40,3 +42,8 @@ export default class Timeline extends React.Component<TimelineProps, any> {
     );
   }
 }
+
+Timeline.defaultProps = defaultProps;
+Timeline.propTypes = propTypes;
+
+export default Timeline;

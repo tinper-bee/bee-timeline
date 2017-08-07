@@ -3,22 +3,20 @@ import classNames from 'classnames';
 import splitObject from './splitObject';
 
 // Timeline
-export interface TimeLineItemProps {
+const propTypes = {
   /** 指定圆圈颜色 */
-  color?: string;
-  dot?: React.ReactNode;
-  pending?: boolean;
-  style?: React.CSSProperties;
+  color: React.PropTypes.string,
+  dot: React.PropTypes.node,
+  pending: React.PropTypes.bool
 }
-
-export default class TimelineItem extends React.Component<TimeLineItemProps, any> {
-  static defaultProps = {
+const defaultProps = {
     prefixCls: 'u-timeline',
     color: 'blue',
     last: false,
     pending: false,
-  };
+};
 
+class TimelineItem extends React.Component{
   render() {
     const [{
       prefixCls, color, last, children, pending, className, dot,
@@ -53,3 +51,6 @@ export default class TimelineItem extends React.Component<TimeLineItemProps, any
     );
   }
 }
+TimelineItem.propTypes = propTypes;
+TimelineItem.defaultProps = defaultProps;
+export default TimelineItem;
