@@ -43,7 +43,7 @@ render(Demo1,document.getElementById('app'));
 
 ## API
 
-###Timeline
+### Timeline
 
 |Property|Description|Type|Default|
 |:---|:-----|:----|:------|
