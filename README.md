@@ -9,7 +9,6 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/tinper-bee/bee-timeline.svg)](http://isitmaintained.com/project/tinper-bee/bee-timeline "Percentage of issues still open")
 
 
-react bee-timeline component for tinper-bee
 常用于当一系列的信息按时间排序的时候或者做个可视化的连接
 
 

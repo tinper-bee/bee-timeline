@@ -50,17 +50,21 @@ $timeline-prefix-cls : 'u-timeline';
       background-color: $component-background;
       border-radius: 100px;
       border: 2px solid transparent;
-      &-blue {
-        border-color: $primary-color;
-        color: $primary-color;
+
+      &-news {
+        @include timeline-styles-variant($timeline-news-color);
       }
-      &-red {
-        border-color: $error-color;
-        color: $error-color;
+      &-danger {
+        @include timeline-styles-variant($timeline-danger-color);
       }
-      &-green {
-        border-color: $success-color;
-        color: $success-color;
+      &-success {
+        @include timeline-styles-variant($timeline-success-color);
+      }
+      &-warning {
+        @include timeline-styles-variant($timeline-warning-color);
+      }
+      &-info {
+        @include timeline-styles-variant($timeline-info-color);
       }
     }
 

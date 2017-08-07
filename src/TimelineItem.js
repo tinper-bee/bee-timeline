@@ -11,7 +11,7 @@ const propTypes = {
 }
 const defaultProps = {
     prefixCls: 'u-timeline',
-    color: 'blue',
+    color: 'info',
     last: false,
     pending: false,
 };
