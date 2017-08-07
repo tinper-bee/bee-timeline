@@ -10,21 +10,48 @@
 
 
 react bee-timeline component for tinper-bee
+常用于当一系列的信息按时间排序的时候或者做个可视化的连接
 
-some description...
 
-## 使用方法
 
+## 使用
+使用单独的bee-timeline包
+#### 组件引入
+先进行下载bee-timeline包
+```
+npm install --save bee-timeline
+```
 ```js
+import Timeline from 'bee-timeline';
+class Demo1 extends Component {
+    render () {
+        return (
+            <Timeline>
+                <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+                <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+            </Timeline>
+        )
+    }
+}
+
+render(Demo1,document.getElementById('app'));
 
 ```
 
 
-
 ## API
 
-|参数|说明|类型|默认值|
-|:--|:---:|:--:|---:|
+###Timeline
+|Property|Description|Type|Default|
+|:---|:-----|:----|:------|
+|pending|设置最后一个虚线节点|(boolean|string|ReactNode)|-|
+###Timeline.item
+|Property|Description|Type|Default|
+|:---|:-----|:----|:------|
+|color|设置圆环的颜色|(blue|blue|green)|或者其他自定义颜色|-|
+|dot|自定义的时间节点|string|ReactNode|或者其他自定义颜色|-|
 
 #### 开发调试
 
