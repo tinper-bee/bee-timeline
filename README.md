@@ -44,6 +44,7 @@ render(Demo1,document.getElementById('app'));
 ## API
 
 ###Timeline
+
 |Property|Description|Type|Default|
 |:---|:-----|:----|:------|
 |pending|设置最后一个虚线节点|(boolean|string|ReactNode)|-|
