@@ -47,7 +47,9 @@ render(Demo1,document.getElementById('app'));
 |Property|Description|Type|Default|
 |:---|:-----|:----|:------|
 |pending|设置最后一个虚线节点|(boolean|string|ReactNode)|-|
-###Timeline.item
+
+### Timeline.item
+
 |Property|Description|Type|Default|
 |:---|:-----|:----|:------|
 |color|设置圆环的颜色|(blue|blue|green)|或者其他自定义颜色|-|
