@@ -1,14 +1,14 @@
 /**
 *
-* @title 这是标题
-* @description 这是描述
+* @title 定制化颜色Timeline
+* @description 设置圆环的颜色[success,info,danger,warning,news]
 *
 */
 class Demo2 extends Component {
     render () {
         return (
             <Timeline>
-                <Timeline.Item color="info">Create a services site 2015-09-01</Timeline.Item>
+                <Timeline.Item color="success">Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item color="info">Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item color="danger">
                     <p>Solve initial network problems 1</p>

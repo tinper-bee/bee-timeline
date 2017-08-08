@@ -1,7 +1,7 @@
 /**
 *
-* @title 这是标题
-* @description 这是描述
+* @title 自定义Timeline节点
+* @description 将icon或者其他自定义元素设置成节点.
 *
 */
 class Demo4 extends Component {

@@ -1,7 +1,7 @@
 /**
 *
-* @title 这是标题
-* @description 这是描述
+* @title pending Timeline
+* @description 当Timeline还未完成或者正在进行,将幽灵节点放到最后。通过设置 pending={true} 或者 pending={a React Element}。
 *
 */
 class Demo3 extends Component {
