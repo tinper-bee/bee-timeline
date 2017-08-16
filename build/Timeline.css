@@ -32,15 +32,21 @@
       background-color: #fff;
       border-radius: 100px;
       border: 2px solid transparent; }
-      .u-timeline-item-head-blue {
-        border-color: #108ee9;
-        color: #108ee9; }
-      .u-timeline-item-head-red {
-        border-color: #f04134;
-        color: #f04134; }
-      .u-timeline-item-head-green {
-        border-color: #00a854;
-        color: #00a854; }
+      .u-timeline-item-head-news {
+        border-color: rgb(33,150,243);
+        color: rgb(33,150,243); }
+      .u-timeline-item-head-danger {
+        border-color: rgb(244,67,54);
+        color: rgb(244,67,54); }
+      .u-timeline-item-head-success {
+        border-color: rgb(76,175,80);
+        color: rgb(76,175,80); }
+      .u-timeline-item-head-warning {
+        border-color: rgb(255,152,0);
+        color: rgb(255,152,0); }
+      .u-timeline-item-head-info {
+        border-color: rgb(0,188,212);
+        color: rgb(0,188,212); }
     .u-timeline-item-head-custom {
       position: absolute;
       text-align: center;

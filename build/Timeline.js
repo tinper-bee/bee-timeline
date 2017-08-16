@@ -36,6 +36,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
+var propTypes = {
+  /** 指定最后一个幽灵节点是否存在或内容 */
+  pending: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.bool, _react2["default"].PropTypes.node])
+};
+
+var defaultProps = {
+  prefixCls: 'u-timeline'
+  //static Item: React.ReactNode;  TimelineProps
+};
 var Timeline = function (_React$Component) {
   _inherits(Timeline, _React$Component);
 
@@ -78,8 +87,8 @@ var Timeline = function (_React$Component) {
   return Timeline;
 }(_react2["default"].Component);
 
-Timeline.defaultProps = {
-  prefixCls: 'u-timeline'
-};
+Timeline.defaultProps = defaultProps;
+Timeline.propTypes = propTypes;
+
 exports["default"] = Timeline;
 module.exports = exports['default'];

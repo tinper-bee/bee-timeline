@@ -5,41 +5,34 @@ import Timeline from '../src/index';
 
 describe('Enzyme Shallow', function() {
 	it('Timeline should be exist', function() {
-		let alert = shallow(<Timeline/>);
-		expect(alert.hasClass('u-timeline')).to.equal(true);
+		let timeline = shallow(<Timeline/>);
+		expect(timeline.hasClass('u-timeline')).to.equal(true);
 	})
 })
-describe('Alert styles', function() {
-	it('danger alert', function() {
-		let alert = shallow(<Alert colors="danger"/>);
-		expect(alert.hasClass('u-alert-danger')).to.equal(true);
-	})
-	it('warning alert', function() {
-		let alert = shallow(<Alert colors="warning"/>);
-		expect(alert.hasClass('u-alert-warning')).to.equal(true);
-	})
-	it('info alert', function() {
-		let alert = shallow(<Alert colors="info"/>);
-		expect(alert.hasClass('u-alert-info')).to.equal(true);
-	})
-	it('news alert', function() {
-		let alert = shallow(<Alert colors="news"/>);
-		expect(alert.hasClass('u-alert-news')).to.equal(true);
-	})
-	it('success alert', function() {
-		let alert = shallow(<Alert colors="success"/>);
-		expect(alert.hasClass('u-alert-success')).to.equal(true);
+describe('Timeline styles', function() {
+	// let timeline = (<Timeline>
+	// 	<Timeline.Item color="success">Create a services site 2015-09-01</Timeline.Item>
+	// 	<Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+	// 	<Timeline.Item dot={<Icon type="uf-time-c-o" style={{ fontSize: '16px' }} />} color="danger">Technical testing 2015-09-01</Timeline.Item>
+	// 	<Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+	// </Timeline>);
+	
+	
+	it('success Timeline', function() {
+		console.log(timeline);
+		// let timeline = shallow(<Timeline colors="success"/>);
+		// expect(timeline.hasClass('u-Timeline-success')).to.equal(true);
 	})
 
 })
-describe('Should call onDismiss callback on dismiss click',function(){
-	it('Alert close button', function() {
-		let clickFlag = false;
-		let alertClick = function (){
-			clickFlag = true;
-		};
-		let alert = mount(<Alert onDismiss={ alertClick } />);
-		alert.find('.close').simulate('click');
-		expect(clickFlag).to.equal(true);
-	})
- })
+// describe('Should Timeline can custome node',function(){
+// 	it('Timeline close button', function() {
+// 		let clickFlag = false;
+// 		let TimelineClick = function (){
+// 			clickFlag = true;
+// 		};
+// 		let timeline = mount(<Timeline onDismiss={ TimelineClick } />);
+// 		timeline.find('.close').simulate('click');
+// 		expect(clickFlag).to.equal(true);
+// 	})
+//  })

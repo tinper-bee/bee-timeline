@@ -33,6 +33,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 // Timeline
+var propTypes = {
+  /** 指定圆圈颜色 */
+  color: _react2["default"].PropTypes.string,
+  dot: _react2["default"].PropTypes.node,
+  pending: _react2["default"].PropTypes.bool
+};
+var defaultProps = {
+  prefixCls: 'u-timeline',
+  color: 'info',
+  last: false,
+  pending: false
+};
+
 var TimelineItem = function (_React$Component) {
   _inherits(TimelineItem, _React$Component);
 
@@ -84,11 +97,7 @@ var TimelineItem = function (_React$Component) {
   return TimelineItem;
 }(_react2["default"].Component);
 
-TimelineItem.defaultProps = {
-  prefixCls: 'u-timeline',
-  color: 'blue',
-  last: false,
-  pending: false
-};
+TimelineItem.propTypes = propTypes;
+TimelineItem.defaultProps = defaultProps;
 exports["default"] = TimelineItem;
 module.exports = exports['default'];
