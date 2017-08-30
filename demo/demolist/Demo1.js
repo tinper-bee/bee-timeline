@@ -3,6 +3,10 @@
 * @title 基本常用Timeline
 *
 */
+
+import React, { Component } from 'react';
+import Timeline from '../../src';
+
 class Demo1 extends Component {
     render () {
         return (
@@ -16,3 +20,5 @@ class Demo1 extends Component {
     }
 }
 
+
+export default Demo1;

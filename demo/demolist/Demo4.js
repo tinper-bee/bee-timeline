@@ -4,6 +4,10 @@
 * @description 将icon或者其他自定义元素设置成节点.
 *
 */
+import React, { Component } from 'react';
+import Timeline from '../../src';
+import Icon from 'bee-icon';
+
 class Demo4 extends Component {
     render () {
         return (
@@ -16,5 +20,7 @@ class Demo4 extends Component {
         )
     }
 }
+
+export default Demo4;
 
 

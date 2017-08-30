@@ -4,6 +4,9 @@
 * @description 当Timeline还未完成或者正在进行,将幽灵节点放到最后。通过设置 pending={true} 或者 pending={a React Element}。
 *
 */
+import React, { Component } from 'react';
+import Timeline from '../../src';
+
 class Demo3 extends Component {
     render () {
         return (
@@ -15,5 +18,7 @@ class Demo3 extends Component {
         )
     }
 }
+
+export default Demo3;
 
 

@@ -4,6 +4,10 @@
 * @description 设置圆环的颜色[success,info,danger,warning,news]
 *
 */
+import React, { Component } from 'react';
+import Timeline from '../../src';
+import Icon from 'bee-icon';
+
 class Demo2 extends Component {
     render () {
         return (
@@ -25,3 +29,5 @@ class Demo2 extends Component {
     }
 }
 
+
+export default Demo2;
