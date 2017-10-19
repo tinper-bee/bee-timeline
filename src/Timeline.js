@@ -2,12 +2,13 @@ import React from 'react';
 import classNames from 'classnames';
 import TimelineItem from './TimelineItem';
 import splitObject from './splitObject';
+import PropTypes from 'prop-types';
 
 const  propTypes = {
   /** 指定最后一个幽灵节点是否存在或内容 */
-  pending: React.PropTypes.oneOfType([
-      React.PropTypes.bool,
-      React.PropTypes.node
+  pending: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.node
   ])
 }
 

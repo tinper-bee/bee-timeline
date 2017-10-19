@@ -1,13 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
 import splitObject from './splitObject';
+import PropTypes from 'prop-types';
 
 // Timeline
 const propTypes = {
   /** 指定圆圈颜色 */
-  color: React.PropTypes.string,
-  dot: React.PropTypes.node,
-  pending: React.PropTypes.bool
+  color: PropTypes.string,
+  dot: PropTypes.node,
+  pending: PropTypes.bool
 }
 const defaultProps = {
     prefixCls: 'u-timeline',

@@ -24,6 +24,10 @@ var _splitObject3 = require('./splitObject');
 
 var _splitObject4 = _interopRequireDefault(_splitObject3);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -38,7 +42,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var propTypes = {
   /** 指定最后一个幽灵节点是否存在或内容 */
-  pending: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.bool, _react2["default"].PropTypes.node])
+  pending: _propTypes2["default"].oneOfType([_propTypes2["default"].bool, _propTypes2["default"].node])
 };
 
 var defaultProps = {
