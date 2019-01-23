@@ -45,7 +45,7 @@ var propTypes = {
 };
 var defaultProps = {
   prefixCls: 'u-timeline',
-  color: 'info',
+  color: 'primary',
   last: false,
   pending: false
 };

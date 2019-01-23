@@ -51,6 +51,9 @@ $timeline-prefix-cls : 'u-timeline';
       border-radius: 100px;
       border: 2px solid transparent;
 
+      &-primary {
+        @include timeline-styles-variant($timeline-primary-color);
+      }
       &-news {
         @include timeline-styles-variant($timeline-news-color);
       }
